@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Fira+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/calibre');
+@import url('http://fonts.cdnfonts.com/css/sf-mono');
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A192F;
+  color: #8892B0 !important;
+  font-family: 'Calibre', 'Fira Sans', -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* overflow-x: hidden; */
+}
+
+header {
+  width: 100%;
+  padding: 0px 18px;
+}
+
+main {
+  width: 100%;
+  padding: 0px 10%;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.myNavFont {
+  color: #8892B0;
+  font-size: 14px;
+}
+
+.myNavFont span {
+  margin-right: 5px;
+}
+
+.myNavFont:hover {
+  color: rgba(83, 211, 185, .95);
+}
+
+.nos {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
+  margin-right: 10px;
+}
+
+.myFont {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.spText {
+  color: #64ffda;
+  text-decoration: none !important;
+  margin: 0 !important;
+  padding: 0 !important ;
+}
+
+.myBtn {
+  border-color: #64ffda;
+  color: #64ffda;
+}
+
+.myBtn:hover {
+  color: #64ffda;
+  background-color: rgba(83, 211, 185, .18);
+}
+
+#intro {
+  padding: 0;
+  margin-top: 50px;
+}
+
+#intro div {
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+#intro div h1 {
+  font-size: 4vmin;
+  color: #64ffda;
+  margin-left: 6px;
+  margin-bottom: 25px;
+}
+
+#intro h2 {
+  margin: 0;
+  color: #ccd6f6;
+  font-size: 11vmin;
+  font-weight: 600;
+  line-height: 88%;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+#intro div h3 {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 11vmin;
+  font-weight: 600;
+  line-height: 88%;
+  width: 40vw;
+}
+
+#intro div p {
+  margin: 0;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#intro div a {
+  margin: 0;
+  margin-top: 50px;
+  padding: 10px 11px 4px 10px;
+}
+
+#firstContent {
+  max-width: 650px;
+}
+
+.sections {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 35px;
+  color: #ccd6f6;
+}
+
+#about {
+  padding: 100px 0;
+  margin: 0 80.6px;
+}
+
+#about h2 {
+  margin: 10px 0px 40px 0px;
+}
+
+#about h2 span {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+#about div {
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+#about div p {
+  margin: 0px 0px 15px 0px;
+  /* width: 441.35px; */
+}
+
+.wrapper {
+  border: 2px solid #64ffda;
+  border-radius: 5px;
+}
+
+#education {
+  padding: 100px 0;
+  margin: 0 42.8px;
+}
+
+#education h2 {
+  margin: 10px 0 40px 0;
+}
+
+#education h2 span {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+#education .col h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+#education h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#education h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #ccd6f6;
+}
+
+#education #div1 h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+#skills {
+  padding: 100px 0;
+}
+
+#skills h2 span {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+#techs {
+  width: 50%;
+  list-style-type: none;
+}
+
+.tech-items::before {
+  content: "\2023";
+  color: #64ffda;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.myCard {
+  background-color: #112240;
+  border-radius: 5px;
+}
+
+#contact {
+  padding: 100px 0;
+}
+
+#contact h2 {
+  font-size: 10vmin;
+}
+
+#contact h2 span {
+  font-size: 16px;
+  font-weight: lighter;
+  display: block;
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 520px) {
+  #education #div2 {
+    margin-top: 30px;
+  }
+
+  #intro div h3 {
+    width: 60vw;
+  }
+  
+  #gif img {
+    width: 50vw;
+    height: 100%;
+  }
+
+  #about {
+    margin: 0 2%;
+  }
+
+  #about div p {
+    width: 60vw;
+  }
+
+  #lofi img {
+    width: 50vw;
+    height: 100%;
+  }
+
+  #education {
+    margin: 0 1%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .navTabs {
+    position: absolute;
+    right: 0;
+  }
+}
