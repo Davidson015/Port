@@ -363,6 +363,10 @@ a:hover {
   #contact h2 span {
     margin-bottom: 5% !important;
   }
+
+  #contact p {
+    font-size: smaller;
+  }
 }
 
 @media screen and (min-width: 991px) {
