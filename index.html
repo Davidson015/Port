@@ -10,21 +10,19 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" crossorigin="anonymous">
   <title>David Ogunsola</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navBar">
   <!-- NavBar -->
-  <header>
+  <header id="navBar">
     <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
       <div class="container-fluid position-relative">
         <a class="navbar-brand" href="index.html">
-        <img src="./assets/images/AREmoji_20220213_023909_55716.png" alt="Unable to load image" width="80" height="70">
-      </a>
-        <button class="navbar-toggler myBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse me-5 navTabs" id="navbarTogglerDemo02">
+          <img src="./assets/images/AREmoji_20220213_023909_55716.png" alt="Unable to load image" width="80" height="70">
+        </a>
+        <span class="navbar-toggler bi bi-list spText fs-1" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" role="button" aria-label="Toggle navigation"></span>
+        <div class="collapse navbar-collapse me-5 navTabs" id="navMenu">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 myFont">
             <li class="nav-item">
-              <a class="nav-link active myNavFont" aria-current="page" href="#about"><span class="nos">01.</span>About</a>
+              <a class="nav-link myNavFont" href="#about"><span class="nos">01.</span>About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link myNavFont" href="#education"><span class="nos">02.</span>Education</a>
@@ -48,7 +46,7 @@
     <!-- Introductory Content -->
     <div id="intro" class="container">
       <div class="row">
-        <div id="firstContent" class="col me-5">
+        <div id="firstContent" class="col me-lg-5">
           <div>
             <h1 class="myFont">Hey there👋, I'm</h1>
           </div>
@@ -57,7 +55,7 @@
             <h3>I build things for the best experience with technology.</h3>
           </div>
           <div>
-            <p>I’m a potential software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm enrolled in the Advanced Diploma in Software Engineering (ADSE) programme at <a class="spText" href="http://www.aptechabeokuta.com.ng/">Aptech</a>.</p>
+            <p>I’m a potential software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm enrolled in the Advanced Diploma in Software Engineering (ADSE) programme at <a class="spText" href="http://www.aptechabeokuta.com.ng/" target="_blank">Aptech</a>.</p>
           </div>
         </div>
         <div id="gif" class="col pt-sm-5 p-0">
@@ -72,15 +70,15 @@
     </div>
 
     <!-- About Section -->
-    <div id="about" data-aos="fade-up-left" data-aos-duration="2000" class="container">
+    <div id="about" data-aos="fade-up" data-aos-duration="2000" class="container">
       <h2 class="sections"><span class="nos">01.</span>About Me</h2>
       <div class="row justify-content-sm-center justify-content-md-between">
         <div class="col">
           <p>Hello! My name is David and I enjoy creating things that live on your mobile devices, PCs and the Internet at large. My interest in Software Engineering started back in 2016 when I signed up for a Summer Bootcamp in Electronics coupled with bringing the components to live with some basic <a class="spText" href="http://python.org" target="_blank">Python</a> Program — turns out working with just a bit of a programming language was enough to set the fire going!</p>
-          <p>Hence, my enrollment in the Advanced Diploma in Software Engineering (ADSE) Programme at <a class="spText" href="http://www.aptechabeokuta.com.ng/">Aptech Computer Education</a> for better grounding in the field.</p>
+          <p>Hence, my enrollment in the Advanced Diploma in Software Engineering (ADSE) Programme at <a class="spText" href="http://www.aptechabeokuta.com.ng/" target="_blank">Aptech Computer Education</a> for better grounding in the field.</p>
         </div>
-        <div id="lofi" class="col">
-          <div class="wrapper">
+        <div id="lofi" class="col ms-md-5 ps-md-5">
+          <div class="wrapper ms-md-5">
             <img data-aos="zoom-in-down" data-aos-duration="2000" src="./assets/images/AREmoji_20220213_023909_55716.png" width="300" height="300" alt="Unable to load image">
           </div>
         </div>
@@ -108,7 +106,7 @@
       <h2 class="sections"><span class="nos">03.</span>What can I do?</h2>
       <div class="container">
         <h3 class="my-3 fs-4">Here are a few technologies I’ve been working with recently:</h3>
-        <ul id="techs" class="row row-cols-2 fs-6">
+        <ul id="techs" class="row row-cols-2 fs-6 w-100">
           <li class="tech-items col">JavaScript (ES6+)</li>
           <li class="tech-items col">TypeScript</li>
           <li class="tech-items col">React</li>
@@ -128,56 +126,68 @@
               <div class="card h-100 myCard text-center" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title fs-2">Video Chat Web App</h5>
-                  <p class="card-text fs-6">React.js</p>
+                  <p class="card-text fs-4 mt-5 mt-md-5 pt-5 pt-md-1">React.js</p>
+                </div>
+                <div class="card-footer">
                   <a href="https://videochat-appbydivad.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 pb-0">Preview</a>
                   <a href="https://github.com/Davidson019/React-Video_Chat_App" target="_blank" class="btn myBtn fs-5 d-block pb-0">View Github repo.</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000">
+              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" id="works" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title fs-2">Todo Web App</h5>
-                  <p class="card-text fs-6">Angular&nbsp;&nbsp;&nbsp;TypeScript</p>
-                  <a href="https://todo-web-appbydivad.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 mt-5 pb-0">Preview</a>
+                  <p class="card-text fs-4 mt-5 mt-md-5 pt-5 pt-md-1">Angular ◦ TypeScript</p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://todo-web-appbydivad.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 pb-0">Preview</a>
                   <a href="https://github.com/Davidson019/Todo-Web-App" target="_blank" class="btn myBtn fs-5 d-block pb-0">View Github repo.</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="1000">
+              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" id="works" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title fs-2">Conversion Calculator</h5>
-                  <p class="card-text fs-6">Java</p>
+                  <p class="card-text fs-4 mt-5 mt-md-5 pt-5 pt-md-1">Java</p>
+                </div>
+                <div class="card-footer">
                   <a href="https://github.com/Davidson019/Conversion_Calculator" target="_blank" class="btn myBtn fs-5 d-block pb-0">View Github repo.</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">
+              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" id="works" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title fs-2">DCakeShop</h5>
-                  <p class="card-text fs-6">Bootstrap</p>
-                  <a href="https://dcakeshop.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 mt-5 pb-0">Preview</a>
+                  <p class="card-text fs-4 mt-5 mt-md-5 pt-5 pt-md-1">Bootstrap</p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://dcakeshop.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 pb-0">Preview</a>
                   <a href="https://github.com/Davidson019/The_Cake_Shop" target="_blank" class="btn myBtn fs-5 d-block pb-0">View Github repo.</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="1000">
+              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" id="works" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title fs-2">Task Tracker (Web App)</h5>
-                  <p class="card-text fs-6">React.js</p>
+                  <p class="card-text fs-4 mt-5 mt-md-5 pt-5 pt-md-1">React.js</p>
+                </div>
+                <div class="card-footer">
                   <a href="https://task-trackerbydivad.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 pb-0">Preview</a>
                   <a href="https://github.com/Davidson019/Task-Tracker" target="_blank" class="btn myBtn fs-5 d-block pb-0">View Github repo.</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="1000">
+              <div class="card h-100 myCard text-center" data-aos="zoom-in-up" id="works" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title fs-2">Angular JS Todo Web App</h5>
-                  <p class="card-text fs-6">Angular.js</p>
+                  <p class="card-text fs-4 mt-5 mt-md-5 pt-5 pt-md-1">Angular.js</p>
+                </div>
+                <div class="card-footer">
                   <a href="https://todobydivad.netlify.app/" target="_blank" class="btn myBtn fs-5 d-block mb-1 pb-0">Preview</a>
                   <a href="https://github.com/Davidson019/AngularJs_Todo_App" target="_blank" class="btn myBtn fs-5 d-block pb-0">View Github repo.</a>
                 </div>
@@ -192,11 +202,11 @@
     <div id="contact" class="container" data-aos="fade-up" data-aos-duration="2000">
       <div class="d-flex justify-content-center">
         <h2 class="sections">
-          <span class="nos mb-5">04. What's Next?</span>
+          <span class="nos mb-5 d-flex justify-content-center">04. What's Next?</span>
           Get In Touch
         </h2>
       </div>
-      <p class="d-flex justify-content-center mt-3">Open for immediate opportunities!</p>
+      <p class="d-flex justify-content-center mt-0 mt-md-3">Open for immediate opportunities!</p>
       <div class="d-flex justify-content-center">
         <a type="button" class="btn btn-lg myBtn pb-0" href="mailto:tobilobadiekola@gmail.com">Leave a message</a>
       </div>
