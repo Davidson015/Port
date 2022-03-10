@@ -367,6 +367,18 @@ a:hover {
   #contact p {
     font-size: smaller;
   }
+
+  #personal {
+    word-break: break-all;
+  }
+
+  #div2 {
+    word-break: break-all;
+  }
+
+  #about div p {
+    word-break: break-all;
+  }
 }
 
 @media screen and (min-width: 991px) {
