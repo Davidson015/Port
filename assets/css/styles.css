@@ -368,7 +368,7 @@ a:hover {
     font-size: smaller;
   }
 
-  #personal {
+  #personal p {
     word-break: break-all;
   }
 
