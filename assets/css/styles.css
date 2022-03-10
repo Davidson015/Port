@@ -45,8 +45,18 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: .6s linear;
+}
+
 a:hover {
   color: #64ffdba6;
+}
+
+a:active {
+  color: #64ffda;
 }
 
 .active {
@@ -90,13 +100,18 @@ a:hover {
   padding: 0 !important ;
 }
 
-.myBtn {
-  border-color: #64ffda;
-  color: #64ffda;
+.bi {
+  transition: .2s;
 }
 
 .bi:active {
   color: #64ffdb80;
+}
+
+.myBtn {
+  border-color: #64ffda;
+  color: #64ffda;
+  transition: .6s linear;
 }
 
 .myBtn:hover {
@@ -272,6 +287,7 @@ a:hover {
 
 #contact {
   padding: 100px 0;
+  margin-bottom: 10%;
 }
 
 #contact h2 {
@@ -282,6 +298,47 @@ a:hover {
   font-size: 16px;
   font-weight: lighter;
   margin: 0;
+}
+
+footer {
+  padding: 15px;
+}
+
+footer a {
+  font-size: 12px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: 400;
+  line-height: 12px;
+  font-style: normal;
+}
+
+footer a:hover {
+  color: #64ffda;
+}
+
+#footer {
+  margin-bottom: 18px !important;
+}
+
+#social a {
+  transition: .2s;
+}
+
+.line {
+  background-color: #8892B0;
+  width: 1.5px;
+  height: 20vh;
+}
+
+#num {
+  font-size: 16px;
+}
+
+#git {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: auto;
 }
 
 @media screen and (max-width: 520px) {
@@ -315,15 +372,8 @@ a:hover {
     padding-bottom: 60px;
   }
 
-  #about h2 {
-    /* margin-left: 20%;
-    margin-right: 20%; */
-  }
-
   #about div p {
     width: 80vw;
-    /* margin-left: 2%; */
-    /* text-align: justify; */
   }
 
   #lofi img {
@@ -349,10 +399,6 @@ a:hover {
   #skills {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  #skills h3 {
-    
   }
 
   #contact {
@@ -390,10 +436,25 @@ a:hover {
   #techs {
     width: 50% !important;
   }
+
+  #social {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .headerOpc {
     height: auto;
+  }
+
+  #footer {
+    position: relative;
+  }
+  
+  #social {
+    position: absolute !important;
+    top: -100%;
+    height: fit-content;
   }
 }
