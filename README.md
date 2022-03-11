@@ -1,6 +1,6 @@
-# Port
+# My Portfolio
 
-Just a basic portfolio of myself built with HTML, CSS, BOOTSTRAP & VANILLA JS
+Just a basic portfolio I built with HTML, CSS, BOOTSTRAP & VANILLA JS
 
 What do you think?👇
 https://alosnugo.netlify.app
