@@ -3,13 +3,22 @@
 @import url('https://fonts.cdnfonts.com/css/sf-mono');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+:root {
+  --bgColor: rgb(10, 25, 47);
+  /* --typingSpeed: 6s; */
+  --text: rgb(136, 146, 176);
+  /* --opc: 0; */
+}
+
 * {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #0A192F;
-  color: #8892B0 !important;
+  background-color: var(--bgColor);
+  color: var(--text) !important;
   font-family: 'Calibre', 'Fira Sans', -apple-system, sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -23,21 +32,21 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000000;
+  transition: .5s linear;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
-.headerOpc {
-  background-color: rgba(10, 25, 47, .85);
-  backdrop-filter: blur(12px);
-  height: 50px;
-}
-
-.headerOpc nav {
+nav {
   height: 100%;
+  transition: .8s;
 }
 
 main {
   width: 100%;
   padding: 0px 10%;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
 img {
@@ -64,8 +73,9 @@ a:active {
 }
 
 .myNavFont {
-  color: #8892B0;
+  color: var(--text);
   font-size: 14px;
+  transition: .3s;
 }
 
 .myNavFont span {
@@ -302,14 +312,13 @@ a:active {
 
 footer {
   padding: 15px;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
 footer a {
   font-size: 12px;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-weight: 400;
   line-height: 12px;
-  font-style: normal;
 }
 
 footer a:hover {
@@ -341,6 +350,7 @@ footer a:hover {
   margin: auto;
 }
 
+/* Media Queries */
 @media screen and (max-width: 520px) {
   #intro div h3 {
     width: 100%;
@@ -350,20 +360,6 @@ footer a:hover {
 
   #intro div p {
     width: 100%;
-  }
-
-  #gif {
-    display: none;
-  }
-
-  #gif .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #gif img {
-    width: 80vw;
-    height: 100%;
   }
 
   #about {
@@ -444,8 +440,12 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .headerOpc {
-    height: auto;
+  header {
+    height: auto !important;
+  }
+
+  #gif {
+    display: none;
   }
 
   #footer {
@@ -458,3 +458,116 @@ footer a:hover {
     height: fit-content;
   }
 }
+
+@media screen and (min-width: 521px) and (max-width: 992px) {
+  #lofi {
+    display: none;
+  }
+
+  #about {
+    margin-left: 0;
+  }
+  
+  #firstContent #myName {
+    width: 110%;
+  }
+
+  #firstContent div h3 {
+    width: 110%;
+  }
+}
+
+@media screen and (min-width: 923px) and (max-width: 1200px) {
+  #firstContent #myName {
+    width: 150%;
+  }
+
+  #firstContent div h3 {
+    width: 150%;
+  }
+
+  #gif {
+    display: none;
+  }
+
+  #about {
+    margin-left: 3%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1379px) {
+  #gif img {
+    width: 50vh;
+    height: 50vh;
+  }
+}
+
+/* TypeWriting Animation */
+/* #intro div h1, #intro div h2, #intro div h3, #intro div p {
+  position: relative;
+}
+
+#intro div h1::before, #intro div h1::after, #intro div h2::before, #intro div h2::after, #intro div h3::before, h3::before, #intro div p::before, #intro div p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#intro div h1::before {
+  top: -50%;
+  height: 200%;
+  background: var(--bgColor);
+  animation: type var(--typingSpeed) steps(15) 1s forwards;
+}
+
+#intro div h1::after {
+  top: -50%;
+  height: 200%;
+  width: 0.125em;
+  background: var(--text);
+  opacity: var(--opc);
+  transition: opacity .8s;
+  animation: type var(--typingSpeed) steps(15) 1s forwards, cursor 750ms linear infinite;
+}
+
+#intro div h2::before {
+  top: -15%;
+  height: 105%;
+  background: var(--bgColor);
+  animation: type var(--typingSpeed) steps(15) 1s forwards;
+}
+
+#intro div h2::after {
+  top: -15%;
+  height: 105%;
+  width: 0.125em;
+  background: var(--text);
+  opacity: var(--opc);
+  transition: opacity .8s;
+  animation: type var(--typingSpeed) steps(15) 1s forwards,
+    cursor 750ms linear infinite;
+}
+
+@keyframes type {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes cursor {
+  to {
+    background: transparent;
+  }
+
+  49% {
+    background: initial;
+  }
+
+  99% {
+    background: initial;
+  }
+} */
+

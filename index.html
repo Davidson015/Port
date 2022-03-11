@@ -13,12 +13,12 @@
 <body data-bs-spy="scroll" data-bs-target="#navBar">
   <!-- NavBar -->
   <header id="navBar">
-    <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
+    <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container-fluid position-relative">
         <a class="navbar-brand" href="index.html">
           <img src="./assets/images/AREmoji_20220213_023909_55716.png" alt="Unable to load image" width="80" height="70">
         </a>
-        <span class="navbar-toggler bi bi-list spText fs-1" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" role="button" aria-label="Toggle navigation"></span>
+        <span id="navbar-toggler" class="navbar-toggler bi bi-list spText fs-1" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" role="button" aria-label="Toggle navigation"></span>
         <div class="collapse navbar-collapse me-5 navTabs" id="navMenu">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 myFont">
             <li class="nav-item">
@@ -48,7 +48,7 @@
       <div class="row">
         <div id="firstContent" class="col me-lg-5">
           <div>
-            <h1 class="myFont">Hey there👋, I'm</h1>
+            <h1 id="hello" class="myFont">Hey there👋, I'm</h1>
           </div>
           <h2 id="myName">David Ogunsola.</h2>
           <div>
@@ -227,7 +227,7 @@
         </a>
         <span class="line ms-lg-2 d-none d-lg-flex"></span>
       </div>
-      <a id="git" href="https://github.com/Davidson019?tab=repositories" target="_blank">
+      <a class="myFont" id="git" href="https://github.com/Davidson019?tab=repositories" target="_blank">
         <p class="d-flex justify-content-center mb-2">
           Designed & Built by David Ogunsola
         </p>
