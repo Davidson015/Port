@@ -25,6 +25,15 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgba(136, 146, 176, .5);
   border-radius: 30px;
+  transition: .2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(136, 146, 176, .6);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(136, 146, 176, .8);
 }
 
 body {
