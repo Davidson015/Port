@@ -16,6 +16,17 @@
   padding: 0;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 146, 176, .5);
+  border-radius: 30px;
+}
+
 body {
   background-color: var(--bgColor);
   color: var(--text) !important;
