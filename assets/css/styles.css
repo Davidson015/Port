@@ -448,10 +448,6 @@ footer a:hover {
   #div2 {
     word-break: break-all;
   }
-
-  #about div p {
-    word-break: break-all;
-  }
 }
 
 @media screen and (min-width: 991px) {
