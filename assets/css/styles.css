@@ -329,8 +329,23 @@ footer a:hover {
   margin-bottom: 18px !important;
 }
 
-#social a {
-  transition: .2s;
+#social a, #email a {
+  transition: .3s ease-in-out;
+}
+
+#social a:hover {
+  transform: scale(120%);
+}
+
+#email a {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: small;
+}
+
+#email a:hover {
+  transform: scale(102%);
 }
 
 .line {
