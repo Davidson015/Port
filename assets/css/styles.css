@@ -244,9 +244,14 @@ a:active {
   width: -moz-fit-content;
 }
 
-#about div p {
-  margin: 0px 0px 15px 0px;
-  /* width: 441.35px; */
+#lofi .wrapper {
+  width: 50vmin;
+  height: 50vmin;
+}
+
+#lofi .wrapper img {
+  height: 100%;
+  width: 100%;
 }
 
 .wrapper {
@@ -405,16 +410,6 @@ footer a:hover {
     width: 80vw;
   }
 
-  #lofi img {
-    width: 100%;
-    height: 100%;
-  }
-
-  #lofi .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   #education {
     margin: 0 auto;
     padding-top: 60px;
@@ -468,7 +463,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   header {
     height: auto !important;
   }
@@ -476,6 +471,11 @@ footer a:hover {
   #gif .wrapper {
     width: 80vmin;
     height: 80vmin;
+  }
+
+  #lofi .wrapper {
+    width: 100%;
+    height: 100%;
   }
 
   #footer {
@@ -489,13 +489,16 @@ footer a:hover {
   }
 }
 
-@media screen and (min-width: 521px) and (max-width: 992px) {
-  #lofi {
-    display: none;
-  }
-
+@media screen and (min-width: 521px) and (max-width: 991px) {
   #about {
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  #lofi .wrapper {
+    width: 30vmin;
+    height: 30vmin;
   }
 }
 
