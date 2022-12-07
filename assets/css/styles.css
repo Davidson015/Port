@@ -187,14 +187,14 @@ a:active {
   font-size: 11vmin;
   font-weight: 600;
   line-height: 88%;
-  width: fit-content;
-  width: -moz-fit-content;
+  width: fit-content !important;
+  width: -moz-fit-content !important;
 }
 
 #intro div h3 {
   margin: 0;
   margin-top: 8px;
-  font-size: 11vmin;
+  font-size: 8vmin;
   font-weight: 600;
   line-height: 88%;
   width: 40vw;
@@ -202,7 +202,7 @@ a:active {
 
 #intro div p {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 5px;
   width: 80%;
 }
 
@@ -212,8 +212,14 @@ a:active {
   padding: 10px 11px 4px 10px;
 }
 
-#firstContent {
-  max-width: 650px;
+#gif .wrapper {
+  width: 65vmin;
+  height: 65vmin;
+}
+
+#gif .wrapper img {
+  height: 100%;
+  width: 100%;
 }
 
 .sections {
@@ -471,8 +477,9 @@ footer a:hover {
     height: auto !important;
   }
 
-  #gif {
-    display: none;
+  #gif .wrapper {
+    width: 80vmin;
+    height: 80vmin;
   }
 
   #footer {
@@ -494,38 +501,68 @@ footer a:hover {
   #about {
     margin-left: 0;
   }
-  
-  #firstContent #myName {
-    width: 110%;
-  }
-
-  #firstContent div h3 {
-    width: 110%;
-  }
 }
 
 @media screen and (min-width: 923px) and (max-width: 1200px) {
-  #firstContent #myName {
-    width: 150%;
-  }
-
-  #firstContent div h3 {
-    width: 150%;
-  }
-
-  #gif {
-    display: none;
-  }
-
   #about {
     margin-left: 3%;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1379px) {
-  #gif img {
-    width: 50vh;
-    height: 50vh;
+@media screen and (min-width: 588px) and (max-width: 1439px) {
+  #firstContent h1 {
+    font-size: 2vmin !important;
+  }
+
+  #myName {
+    font-size: 8vmin !important;
+  }
+
+  #firstContent div h3 {
+    font-size: 5vmin;
+  }
+
+  #gif .wrapper {
+    width: 45vh;
+    height: 45vh;
+  }
+
+  @media screen and (max-width: 811px) {
+    #firstContent h1 {
+      font-size: 2vmin !important;
+    }
+  
+    #myName {
+      font-size: 6vmin !important;
+    }
+  
+    #firstContent div h3 {
+      font-size: 4vmin;
+    }
+  
+    #gif .wrapper {
+      width: 30vh;
+      height: 30vh;
+    }
+  
+    @media screen and (min-width: 768px) {
+      #firstContent h1 {
+        font-size: 2.5vmin !important;
+      }
+    
+      #myName {
+        font-size: 7vmin !important;
+      }
+    
+      #firstContent div h3 {
+        font-size: 4.5vmin;
+      }
+    
+      #gif .wrapper {
+        width: 35vh;
+        height: 35vh;
+      }
+    }
   }
 }
 
