@@ -5,9 +5,7 @@
 
 :root {
   --bgColor: rgb(10, 25, 47);
-  /* --typingSpeed: 6s; */
   --text: rgb(136, 146, 176);
-  /* --opc: 0; */
 }
 
 * {
@@ -563,73 +561,3 @@ footer a:hover {
     }
   }
 }
-
-/* TypeWriting Animation */
-/* #intro div h1, #intro div h2, #intro div h3, #intro div p {
-  position: relative;
-}
-
-#intro div h1::before, #intro div h1::after, #intro div h2::before, #intro div h2::after, #intro div h3::before, h3::before, #intro div p::before, #intro div p::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-#intro div h1::before {
-  top: -50%;
-  height: 200%;
-  background: var(--bgColor);
-  animation: type var(--typingSpeed) steps(15) 1s forwards;
-}
-
-#intro div h1::after {
-  top: -50%;
-  height: 200%;
-  width: 0.125em;
-  background: var(--text);
-  opacity: var(--opc);
-  transition: opacity .8s;
-  animation: type var(--typingSpeed) steps(15) 1s forwards, cursor 750ms linear infinite;
-}
-
-#intro div h2::before {
-  top: -15%;
-  height: 105%;
-  background: var(--bgColor);
-  animation: type var(--typingSpeed) steps(15) 1s forwards;
-}
-
-#intro div h2::after {
-  top: -15%;
-  height: 105%;
-  width: 0.125em;
-  background: var(--text);
-  opacity: var(--opc);
-  transition: opacity .8s;
-  animation: type var(--typingSpeed) steps(15) 1s forwards,
-    cursor 750ms linear infinite;
-}
-
-@keyframes type {
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes cursor {
-  to {
-    background: transparent;
-  }
-
-  49% {
-    background: initial;
-  }
-
-  99% {
-    background: initial;
-  }
-} */
-
