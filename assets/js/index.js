@@ -60,3 +60,14 @@ navBtn.addEventListener('click', () => {
   }
   
 })
+
+const typeWriter = new Typed("#type-writer", {
+  strings: [
+    "Fullstack Developer",
+    "Techthusiast",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+})

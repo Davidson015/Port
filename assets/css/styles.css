@@ -175,10 +175,10 @@ a:active {
 }
 
 #intro div h1 {
-  font-size: 4vmin;
+  font-size: 3vmin;
   color: #64ffda;
-  margin-left: 6px;
-  margin-bottom: 25px;
+  width: 100%;
+  margin-bottom: 30%;
 }
 
 #intro h2 {
@@ -193,17 +193,15 @@ a:active {
 
 #intro div h3 {
   margin: 0;
-  margin-top: 8px;
-  font-size: 8vmin;
+  font-size: 7.5vmin;
   font-weight: 600;
   line-height: 88%;
   width: 40vw;
 }
 
-#intro div p {
-  margin: 0;
-  margin-top: 5px;
-  width: 80%;
+#type-writer {
+  margin-top: 5px !important;
+  font-size: 1.5rem;
 }
 
 #intro div a {
